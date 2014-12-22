@@ -1,0 +1,79 @@
+stack uses basketItem
+basketItem uses product
+productlist uses product
+customer uses stack
+queue uses customer
+
+main uses all+print
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Queue.h
+
+int queueInsert(Queue*,type*);
+type*queueRemove(Queue*);
+type*queueRead(Queue*,rear/front);
+int queueInit(Queue*);
+int queueIsEmpty(Queue*);
+int queueIsFull(Queue*);
+int queueFree(Queue*);
+int queueLength(Queue*);
+
+
+Stack.h
+
+int stackPush(Stack*,type*);
+type*stackPop(Stack*);
+Stack*newStack();
+int stackIsEmpty(Stack*);
+int stackIsFull(Stack*);
+int stackFree(Stack*);
+Ok.
+
+main.c
+
+menu
+1)arrive(queueInsert)
+2)process(queueRemove,print bill)
+3)print(print all)
+4)front(queueRead(front),print bill)
+5)back(queueRead(rear),print bill)
+6)length(queuelength)
+7)exit
+
+getChoice
+
+Customer.h
+
+newCustomer
+freeCustomer
+printCustomer
+	printCustomerTab
+	printCustomerInvoice
+
+print.h
+printTitle
+printChar
+printMenu
+
+
+productList.h
+product*getProduct(int,Product[]);
+product*newProduct();
+product*freeProduct(Product*);
+int freeProductList();
+Product [] createProductList();
